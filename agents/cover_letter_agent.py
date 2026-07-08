@@ -9,6 +9,7 @@ from typing import Dict, Any, Optional, List
 from docx import Document
 from docx.shared import Pt
 from services.claude_client import ClaudeClient
+from core.prompt_safety import wrap_untrusted
 import yaml
 
 
@@ -169,8 +170,8 @@ Company name:"""
 
                     if company and company not in ['Unknown Company', 'None', 'N/A', '']:
                         return company
-                except:
-                    pass
+                except Exception as e:
+                    print(f"[COVER LETTER] Company name extraction failed: {e}")
 
         return company if company else 'Unknown Company'
 
@@ -443,7 +444,7 @@ Key Responsibilities:
 {chr(10).join(f'- {r}' for r in responsibilities[:5])}
 
 FULL JOB DESCRIPTION:
-{raw_description}
+{wrap_untrusted(raw_description)}
 
 MATCH ANALYSIS:
 Score: {match_report['score']}/100

@@ -198,5 +198,65 @@
     "source": "Estimated (no data found)",
     "sample_size": 0,
     "cached_at": "2026-05-17T19:14:35.411256"
+  },
+  "ai_engineer_intern_the_rocks,_sydney_nsw": {
+    "role": "AI Engineer Intern",
+    "location": "The Rocks, Sydney NSW",
+    "min_salary": 80400,
+    "max_salary": 206818,
+    "median_salary": 206818,
+    "source": "DuckDuckGo aggregated",
+    "sample_size": 2,
+    "cached_at": "2026-05-26T07:46:52.591012"
+  },
+  "machine_learning_engineer_intern,_trust_and_safety_engineering_sydney_nsw": {
+    "role": "Machine Learning Engineer Intern, Trust and Safety Engineering",
+    "location": "Sydney NSW",
+    "min_salary": 56000,
+    "max_salary": 56000,
+    "median_salary": 56000,
+    "source": "DuckDuckGo aggregated",
+    "sample_size": 1,
+    "cached_at": "2026-05-26T07:50:52.126827"
+  },
+  "back_end_python_developer_-_gen_ai_platform_sydney_nsw": {
+    "role": "Back End Python Developer - Gen AI Platform",
+    "location": "Sydney NSW",
+    "min_salary": 90000,
+    "max_salary": 125000,
+    "median_salary": 110000,
+    "source": "DuckDuckGo aggregated",
+    "sample_size": 4,
+    "cached_at": "2026-05-26T07:54:22.533065"
+  },
+  "ai_engineer_intern_the_rocks_nsw": {
+    "role": "AI Engineer Intern",
+    "location": "The Rocks NSW",
+    "min_salary": 113389,
+    "max_salary": 120000,
+    "median_salary": 120000,
+    "source": "DuckDuckGo aggregated",
+    "sample_size": 2,
+    "cached_at": "2026-05-31T10:18:58.593476"
+  },
+  "machine_learning_engineer_/_data_scientist_sydney_nsw": {
+    "role": "Machine Learning Engineer / Data Scientist",
+    "location": "Sydney NSW",
+    "min_salary": 75000,
+    "max_salary": 202000,
+    "median_salary": 135000,
+    "source": "DuckDuckGo aggregated",
+    "sample_size": 8,
+    "cached_at": "2026-05-31T10:22:57.924460"
+  },
+  "graduate_ai_&_technology_analyst_sydney_nsw": {
+    "role": "Graduate AI & Technology Analyst",
+    "location": "Sydney NSW",
+    "min_salary": 57000,
+    "max_salary": 202000,
+    "median_salary": 95000,
+    "source": "DuckDuckGo aggregated",
+    "sample_size": 10,
+    "cached_at": "2026-05-31T10:30:43.145519"
   }
 }

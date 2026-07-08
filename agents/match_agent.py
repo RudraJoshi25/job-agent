@@ -3,6 +3,7 @@ import os
 from pathlib import Path
 from typing import Dict, Any, List, Tuple
 from services.claude_client import ClaudeClient
+from core.prompt_safety import wrap_untrusted
 from pydantic import BaseModel, Field
 import yaml
 
@@ -189,7 +190,7 @@ CANDIDATE PROFILE:
 {profile_summary}
 
 JOB POSTING:
-{job_description}
+{wrap_untrusted(job_description)}
 
 Provide:
 1. A score from 0-100 indicating match quality

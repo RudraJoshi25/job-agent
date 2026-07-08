@@ -31,6 +31,12 @@ artifacts/screenshots/
 Thumbs.db
 .browser_profile/
 
+# Runtime / temp
+output_log.txt
+project_structure.txt
+ruvector.db
+test_reports/
+
 *.db
 
 artifacts/

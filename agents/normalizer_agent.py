@@ -6,6 +6,7 @@ from pathlib import Path
 from typing import List, Dict, Any, Optional
 from pydantic import BaseModel, Field
 from services.claude_client import ClaudeClient
+from core.prompt_safety import wrap_untrusted
 
 
 class NormalizedJob(BaseModel):
@@ -182,7 +183,7 @@ Source: {source}
 URL: {raw_job.get('url', 'N/A')}
 
 JOB DESCRIPTION:
-{description[:3000]}
+{wrap_untrusted(description[:3000])}
 
 IMPORTANT FOR COMPANY FIELD:
 If the company field above is empty, "Unknown Company", "None", or "N/A",

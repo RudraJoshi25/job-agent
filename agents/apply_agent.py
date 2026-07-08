@@ -23,11 +23,16 @@ from typing import Dict, Any, Optional, List, Literal
 from playwright.async_api import async_playwright, Page, BrowserContext
 import anthropic
 
+from core.prompt_safety import wrap_untrusted
+
 
 class ApplyAgent:
     """Universal job application agent powered by Claude Sonnet page understanding."""
 
-    BROWSER_PROFILE = "C:/Users/rjjos/job-agent/.browser_profile"
+    BROWSER_PROFILE = os.environ.get(
+        "BROWSER_PROFILE_DIR",
+        str(Path(__file__).resolve().parents[1] / ".browser_profile"),
+    )
 
     # Enterprise ATS with heavy auth walls — always manual queue, no browser needed
     ENTERPRISE_ATS = {'taleo', 'successfactors', 'icims', 'jobvite', 'bamboohr'}
@@ -843,7 +848,7 @@ CURRENT PAGE:
 URL: {page_state['url']}
 Title: {page_state['title']}
 Page text (3000 chars):
-{page_state['body_text']}
+{wrap_untrusted(page_state['body_text'], tag="page_text")}
 
 FORM ELEMENTS:
 {elements_json}

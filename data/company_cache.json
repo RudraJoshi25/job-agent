@@ -25,5 +25,23 @@
     "culture_notes": "",
     "recent_news": [],
     "researched_at": "2026-05-12T23:24:44.931487"
+  },
+  "SEEK": {
+    "company": "SEEK",
+    "size": "Unknown",
+    "industry": "Unknown",
+    "tech_stack": [],
+    "culture_notes": "",
+    "recent_news": [
+      {
+        "title": "Bill & Melinda Gates Foundation Hiring Associate... - Reign Gigs",
+        "url": "https://reigngigs.com/2026/02/22/bill-melinda-gates-foundation-hiring-associate-program-officer/"
+      },
+      {
+        "title": "Côte d'Ivoire Launches 2026 Hiring Campaign for... - Ecofin Agency",
+        "url": "https://www.ecofinagency.com/news-services/2705-55955-cote-divoire-launches-2026-hiring-campaign-for-higher-education-staff"
+      }
+    ],
+    "researched_at": "2026-05-31T10:16:42.340158"
   }
 }

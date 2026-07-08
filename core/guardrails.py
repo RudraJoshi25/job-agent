@@ -44,7 +44,8 @@ class GuardrailsEngine:
         try:
             with open(self.profile_path, 'r', encoding='utf-8') as f:
                 return json.load(f)
-        except:
+        except (FileNotFoundError, json.JSONDecodeError, OSError) as e:
+            print(f"[GUARDRAILS] Could not load profile {self.profile_path}: {e}")
             return {}
 
     def _load_cost_log(self):

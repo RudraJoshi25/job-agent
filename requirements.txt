@@ -2,8 +2,8 @@ anthropic
 playwright
 pydantic
 python-dotenv
-sqlalchemy
 tenacity
-jinja2
 python-docx
-markdown
+pyyaml
+requests
+ddgs
